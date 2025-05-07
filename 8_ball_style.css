@@ -1,3 +1,5 @@
+/* use this tag to comment in css */
+
 body {
     background-color: darkgray;
     text-align: center;
@@ -7,11 +9,11 @@ body {
 
 h1{
     text-shadow:
-    -1px -1px 0 black,
+    -1px -1px 0 black, /* start of outline, using shadow function*/
     1px -1px 0 black,
     -1px 1px 0 black,
-    1px 1px 0 black,
-    2px 2px 5px darkslateblue; 
+    1px 1px 0 black,    /*end of outlline, using shadow function*/
+    2px 2px 5px darkslateblue; /* actual shadow (direction on x axis, y axis, and length of shadow in size of px)px */
 
 }
 
