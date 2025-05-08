@@ -5,16 +5,21 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title id="title">Magic 8 Ball: Fortune Teller</title>
-        <!---link to .css styling page goes in the head-->
+        <!-- <link type="text/css" rel="stylesheet" href="8_ball_style.css"> -->
     </head>
         
     <body>
         <h1 id="welcome-note">Welcome to the Magic 8 Ball: Fortune Teller!</h1>
-        <p id="instructions">Ask the Magic 8 Ball your question, then press the button!</p>
-        <textarea></textarea>
-        <div>
-        <button>Ask the Magic 8 Ball!</button>
-        </div>
+        <p id="instructions">Ask the Magic 8 Ball a "yes or no" question, then press the button!</p>
+        
+        <form>
+           
+            <label for="question"> Question </label>
+            <input type="text" name="Question" id="question"/>
+    
+            <button type="submit" id="submit-button" value="submit">Ask!</button>
+            
+        </form>
     
     </body>
 
