@@ -1,13 +1,15 @@
 /* use this tag to comment in css */
 
-body {
-    background-color: darkgray;
+    body {
+    background-color:darkgrey;
     text-align: center;
-    font-family:Arial, Helvetica, sans-serif;
+    font-size: x-large;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color:blueviolet
-}
 
-h1{
+    }
+
+    h1{
     text-shadow:
     -1px -1px 0 black, /* start of outline, using shadow function*/
     1px -1px 0 black,
@@ -15,5 +17,12 @@ h1{
     1px 1px 0 black,    /*end of outlline, using shadow function*/
     2px 2px 5px darkslateblue; /* actual shadow (direction on x axis, y axis, and length of shadow in size of px)px */
 
-}
+    }
 
+    .responsive-img {
+        max-width: 75%;   /* Don't go beyond the container size */
+        height: auto;      /* Keep the image's aspect ratio */
+        display: block;    /* Removes extra space under image */
+        margin: 50px auto;    /* Center it if it's in a block */
+    }
+    
