@@ -1,11 +1,11 @@
 /* use this tag to comment in css */
 
     body {
-    background-color:darkgrey;
+    background-color:gray;
     text-align: center;
     font-size: x-large;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    color:blueviolet
+    color:blueviolet;
 
     }
 
@@ -19,6 +19,21 @@
 
     }
 
+    #question-form {
+        margin: 0 auto;   /* Center the form */
+        width: 50%;       /* Set a width for the form */
+        padding: 20px;    /* Add some padding */
+        border-radius: 10px; /* Rounded corners */
+        background-color: darkgray; /* Background color */
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    }
+    .question-form input[type="text"] {
+        width: 100%;       /* Full width */
+        padding: 10px;     /* Padding inside the input */
+        border: 1px solid #ccc; /* Border color */
+        border-radius: 5px; /* Rounded corners */
+        margin-bottom: 10px; /* Space below the input */
+    }
     .responsive-img {
         max-width: 75%;   /* Don't go beyond the container size */
         height: auto;      /* Keep the image's aspect ratio */
