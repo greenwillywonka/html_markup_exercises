@@ -27,28 +27,26 @@ document.addEventListener("DOMContentLoaded", () => {
     responseParagraph.classList.remove("visible"); // Hide the response initially
 
     form.addEventListener("submit", (event) => {
-        event.preventDefault(); // Stop the form from reloading the page
+        event.preventDefault();
 
-           const userQuestion = inputField.value.trim(); // remove extra spaces
+            const userQuestion = inputField.value.trim();
 
-        // Input Validation check
         if (userQuestion === "") {
+            responseParagraph.classList.remove("visible");
             responseParagraph.textContent = "Please ask a question first!";
-            responseParagreaph.classList.remove("visible"); // Hide the response
-            void responseParagraph.offsetWidth; // Trigger reflow
-            responseParagraph.classList.add("visible"); // Show the response
+            void responseParagraph.offsetHeight;
+            responseParagraph.classList.add("visible");
             return;
         }
-       
+
         const answer = getMagic8BallResponse();
-        responseParagraph.classList.remove("visible"); // Hide the response initially
-        
+        responseParagraph.classList.remove("visible");
+
         setTimeout(() => {
             responseParagraph.textContent = answer;
-            responseParagraph.classList.add("visible"); // Show the response
-        }, 20); // Delay the response by .2 seconds
+            responseParagraph.classList.add("visible");
+        }, 20);
 
-        // Clear the input field
         inputField.value = "";
     });
 });
