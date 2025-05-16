@@ -5,12 +5,15 @@ function randomNumberGenerator(min, max) {
 }
 
  const sayings = [
-    "It is certain",
+    "It is not certain",
     "It is decidedly so",
     "Without a doubt",
+    "I wouldnt count on it",
     "Yes, definitely",
     "You may rely on it",
     "As I see it, yes",
+    "Hell nah bro",
+    "Does a bear shit in the woods?",
     "Most likely",
     "Outlook good",
  ];
@@ -43,7 +46,11 @@ document.addEventListener("DOMContentLoaded", () => {
         setTimeout(() => {
             responseParagraph.textContent = answer;
             responseParagraph.classList.add("visible");
-        }, 20);
+        }, 100);
+
+        if (responseParagraph.classList.contains("visible")) {
+            responseParagraph.classList.remove("visible");
+        }
 
         inputField.value = "";
     });
