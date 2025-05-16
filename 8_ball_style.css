@@ -1,7 +1,10 @@
 /* use this tag to comment in css */
 
     body {
-    background-color:gray;
+    background-image: url(fluid.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
     font-size: x-large;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -34,10 +37,18 @@
         border-radius: 5px; /* Rounded corners */
         margin-bottom: 10px; /* Space below the input */
     }
+    #response {
+        opacity: 0; /* Start invisible */
+        transition: opacity 1s ease-in;
+    }
+    #response.visible {
+        opacity: 1; /* Fade in */
+    }
     .responsive-img {
         max-width: 75%;   /* Don't go beyond the container size */
         height: auto;      /* Keep the image's aspect ratio */
         display: block;    /* Removes extra space under image */
         margin: 50px auto;    /* Center it if it's in a block */
     }
-    
+  
+  
