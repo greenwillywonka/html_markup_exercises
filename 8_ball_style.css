@@ -40,7 +40,6 @@
     }
     #response {
         opacity: 0; /* Start invisible */
-        transition: opacity 1s ease-in;
         text-shadow:
         -1px -1px 0 black, /* start of outline, using shadow function*/
         1px -1px 0 black,
@@ -53,6 +52,7 @@
 
     }
     #response.visible {
+        transition: opacity 1s ease-in;
         opacity: 1; /* Fade in */
     }
     .responsive-img {

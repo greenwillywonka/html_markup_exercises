@@ -24,15 +24,13 @@ document.addEventListener("DOMContentLoaded", () => {
     const form = document.querySelector("form");
     const responseParagraph = document.getElementById("response");
     const inputField = document.getElementById("question");
-    responseParagraph.classList.remove("visible"); // Hide the response initially
-
+    
     form.addEventListener("submit", (event) => {
         event.preventDefault();
 
             const userQuestion = inputField.value.trim();
 
         if (userQuestion === "") {
-            responseParagraph.classList.remove("visible");
             responseParagraph.textContent = "Please ask a question first!";
             void responseParagraph.offsetHeight;
             responseParagraph.classList.add("visible");
@@ -40,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         const answer = getMagic8BallResponse();
-        responseParagraph.classList.remove("visible");
+        
 
         setTimeout(() => {
             responseParagraph.textContent = answer;
